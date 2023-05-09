@@ -1,7 +1,15 @@
 
 /* CSS Setup */
     /* 1. Select * and set margin and padding to 0, box-sizing to border-box */
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
     /* 2. Select body and add a background color */
+    body{
+        background-color: antiquewhite;
+    }
     /* 3. Select the container class:
         add a background color
         width to 90%
@@ -10,6 +18,14 @@
         padding from your choice of recommended 20px-40px
         border-radius optionally to curve your corners 
     */
+    .container{
+        background-color: aliceblue;
+        width: 90%;
+        max-width: 800px;
+        margin: 100px auto 0;
+        padding: 30px;
+        border-radius: 20px;
+    }
     /* 4. Select the btn class:
         add a background color
         add a text color
@@ -22,6 +38,17 @@
             add a cursor
             add text-align
     */
+    .btn{
+        background-color: rgba(82, 81, 83, 0.158);
+        width: 100%;
+        margin:10px;
+        padding: 10px;
+        border-style: solid;
+        border-color: black;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px;
+    }
     /* 5. Select the next-btn div:
         add a background color
         add a text color
@@ -35,6 +62,47 @@
             add a cursor
             add text-align
     */
+    #next-button{
+        background-color: rgb(61, 61, 75);
+        width:150px;
+        border:0;
+        padding:10px;
+        margin: 20px auto 0;
+        display: none;
+    }
+
+    h1 {
+        padding-bottom: 20px;
+        border-bottom: 1px solid;
+    }
+
+
+    h2{
+        margin-bottom: 20px 0;
+    }
+
+    .btn:hover{
+        background: black;
+        color:aliceblue;
+    }
+
+
+    .correct{
+        background: greenyellow;
+    }
+
+
+    .incorrect{
+        background: salmon;
+    }
+
+
+    .btn:Hover:not([disabled]){
+        background: black;
+        color: aliceblue;
+
+    }
+    
     /* Bonus 0. Add CSS variables with your project color pallette before applying to elements */
     /* Bonus 1. Select the correct div and add a background color + Select the incorrect div and add a background color */
     /* Bonus 2. Add container h1 styling and quiz h2 styling */
